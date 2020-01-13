@@ -1,10 +1,10 @@
 import "../style.css"
-import Link from 'next/link';
+import Header from './components/Header'
 
-
-const Index = () => (
+const Index = props => (
     <div>
-      <p>Hello Next.js</p>
+        <Header/>
+        <p>Hello Next.js</p>
     </div>
   );
   
