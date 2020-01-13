@@ -56,7 +56,13 @@ nav a {
     padding: 1em;
     text-decoration: none;
     color: var(--navbar-text-color);
-    font-size: 90%;
+    font-size: 80%;
+}
+
+@media (min-width: 400px) {
+    nav a {
+        font-size: 90%;
+    }
 }
 
 nav img {
