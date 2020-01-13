@@ -15,6 +15,12 @@ body {
     height: 100%;
 }
 
+body div:first-child {
+    height: 100%;
+}
+
+/* navbar */
+
 header {
     width: 100%;
     position: fixed;
@@ -28,35 +34,33 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav ul div {
+nav div {
     display: flex;
     flex-wrap: wrap;
 }
 
 .navbar-options {
-    width: 70%;
+    width: 65%;
 }
 
 .navbar-auth {
     justify-content: flex-end;
-    width: 30%;
-    /* display: grid;
-    grid: 1fr / 1fr 1fr */
+    width: 35%;
 }
 
-/* .navbar-auth li a {
-    width: 100%;
-} */
-
-nav ul div li {
+nav li {
     display: flex;
 }
 
-nav ul div li a {
+nav a {
     padding: 1em;
     text-decoration: none;
     color: var(--navbar-text-color);
     font-size: 90%;
+}
+
+nav img {
+    width: 1.1rem;
 }
 
 .navbar-auth li:first-of-type a {
@@ -68,46 +72,7 @@ nav ul div li a {
     color: #FFF;
 }
 
-body div:first-child {
-    height: 100%;
-}
-
-.index-content {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-areas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1em;
-}
-
-.login-area {
-    margin: 1em;
-}
-
-.login-areas span {
-    display: inline-block;
-    height: 10rem;
-    width: 18rem;
-    max-width: 300px;
-    color: #FFF;
-    border-radius: 2%;
-}
-
-.developer-account span {
-    background-color: #4457F3;
-}
-
-.company-account span {
-    background-color: #FF733F;
-}
+/* footer */
 
 footer {
     position: fixed;
@@ -118,4 +83,56 @@ footer {
     color: #8F9DBE;
     text-align: center;
     font-size: 90%;
+}
+
+/* index page */
+
+.index-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+.login-areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em;
+}
+
+.login-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1em;
+    height: 10rem;
+    width: 18rem;
+    max-width: 300px;
+    color: #FFF;
+    border-radius: 2%;
+}
+
+.developer-account {
+    background-color: #4457F3;
+}
+
+.company-account {
+    background-color: #FF733F;
+}
+
+.login-area span {
+    display: inline-block;
+    margin: 1em;
+}
+
+.account-icon {
+    align-self: flex-end;
+    font-size: 2rem;
 }

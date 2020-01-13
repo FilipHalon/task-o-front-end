@@ -1,5 +1,6 @@
 import Link from 'next/link';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCog, faTasks, faComments, faCommentDots, faUserPlus, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Header = props => {
     return (
@@ -9,39 +10,39 @@ const Header = props => {
                     <div className="navbar-options">
                         <li>
                             <Link href="/">
-                                <a>Tasko-O!</a>
+                                <a><img src="/taskoala.png" /></a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/">
-                                <a>Zadania</a>
+                                <a><FontAwesomeIcon icon={faTasks} /> Zadania</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/">
-                                <a>Pytania</a>
+                                <a><FontAwesomeIcon icon={faCommentDots} /> Pytania</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/">
-                                <a>Rozmowy</a>
+                                <a><FontAwesomeIcon icon={faComments} /> Rozmowy</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/">
-                                <a>Ustawienia</a>
+                                <a><FontAwesomeIcon icon={faCog} /> Ustawienia</a>
                             </Link>
                         </li>
                     </div>
                     <div className="navbar-auth">
                         <li>
                             <Link href="/">
-                                <a>Zaloguj się</a>
+                                <a><FontAwesomeIcon icon={faUser} /> Zaloguj się</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/">
-                                <a>Zarejestruj się</a>
+                                <a><FontAwesomeIcon icon={faUserPlus} /> Zarejestruj się</a>
                             </Link>
                         </li>
                     </div>
