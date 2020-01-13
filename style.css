@@ -6,8 +6,18 @@
     font-family: sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    position: fixed;
 }
 
 nav ul {
@@ -56,4 +66,56 @@ nav ul div li a {
 .navbar-auth li:last-of-type a:last-of-type {
     background-color: #5D6CED;
     color: #FFF;
+}
+
+body div:first-child {
+    height: 100%;
+}
+
+.index-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em;
+}
+
+.login-area {
+    margin: 1em;
+}
+
+.login-areas span {
+    display: inline-block;
+    height: 10rem;
+    width: 18rem;
+    max-width: 300px;
+    color: #FFF;
+    border-radius: 2%;
+}
+
+.developer-account span {
+    background-color: #4457F3;
+}
+
+.company-account span {
+    background-color: #FF733F;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: .5em;
+    width: 100%;
+    color: #8F9DBE;
+    text-align: center;
+    font-size: 90%;
 }
