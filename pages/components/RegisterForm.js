@@ -8,7 +8,7 @@ const RegisterForm = props => {
     const lockIcon = <span><FontAwesomeIcon icon={faLock} /></span>
 
     return (
-        <div>
+        <div className="page-content-center">
             <h1>Rejestracja konta programisty do systemy Task-O!</h1>
             <form>
                 <ul>

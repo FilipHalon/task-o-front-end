@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog, faTasks, faComments, faCommentDots, faUserPlus, faUser } from '@fortawesome/free-solid-svg-icons';
 
-const Header = props => {
+const Header = () => {
     return (
         <header>
             <nav>

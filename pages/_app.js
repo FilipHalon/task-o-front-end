@@ -1,8 +1,17 @@
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import "../style.css";
+import Header from './components/Header';
+import Footer from './components/Footer';
 // import App from 'next/app'
 
 function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
+    return (
+      <div className="root-container">
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
+    )
   }
   
   // Only uncomment this method if you have blocking data requirements for

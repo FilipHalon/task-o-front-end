@@ -15,7 +15,12 @@ body {
     height: 100%;
 }
 
-body div:first-child {
+/* body div:first-child {
+    height: 100%;
+} */
+
+#__next,
+.root-container {
     height: 100%;
 }
 

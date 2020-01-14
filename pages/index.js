@@ -1,11 +1,6 @@
-import "../style.css";
-import Header from './components/Header';
 import LoginArea from './components/LoginArea';
-import Footer from './components/Footer';
 
-const Index = props => (
-    <div className="index">
-        <Header />
+const Index = () => (        
         <div className="page-content-center">
             <h1>Rejestracja do systemu Task-O!</h1>
             <span className="login-areas">
@@ -13,8 +8,6 @@ const Index = props => (
                 <LoginArea accountType="company"/>
             </span>
         </div>
-        <Footer />
-    </div>
   );
   
   export default Index;
