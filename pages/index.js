@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 const Index = props => (
     <div className="index">
         <Header />
-        <div className="index-content">
+        <div className="page-content-center">
             <h1>Rejestracja do systemu Task-O!</h1>
             <span className="login-areas">
                 <LoginArea accountType="developer"/>
