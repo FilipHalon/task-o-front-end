@@ -9,7 +9,7 @@ const RegisterForm = props => {
 
     return (
         <div className="page-content-center">
-            <h1>Rejestracja konta programisty do systemy Task-O!</h1>
+            <h1>Rejestracja konta {isDeveloperAccount ? 'programisty' : 'firmy'} do systemu Task-O!</h1>
             <form>
                 <ul>
                     <li>
