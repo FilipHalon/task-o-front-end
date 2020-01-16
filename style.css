@@ -202,10 +202,26 @@ form button {
 form button:first-of-type {
     height: 3.5rem;
     border-radius: 4px;
-    background-color: #EB9771;
     font-size: 110%;
     color: #FFF;
     margin-top: 10%;
+    transition: .4s;
+}
+
+.register-button {
+    background-color: #EB9771;
+}
+
+.register-button:hover {
+    background-color: #FF7325;
+}
+
+.login-button {
+    background-color: #39C3797E;
+}
+
+.login-button:hover {
+    background-color: #39C379;
 }
 
 form button:last-of-type {

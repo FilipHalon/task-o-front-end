@@ -1,8 +1,7 @@
-import "../style.css";
-import RegisterForm from './components/RegisterForm';
+import UserAuthForm from './components/UserAuthForm';
 
 const Register = () => {
-    return <RegisterForm />
+    return <UserAuthForm formType="register"/>
 }
 
 export default Register;

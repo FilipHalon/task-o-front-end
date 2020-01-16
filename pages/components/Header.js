@@ -36,12 +36,12 @@ const Header = () => {
                     </div>
                     <div className="navbar-auth">
                         <li>
-                            <Link href="/">
+                            <Link href="/login">
                                 <a><FontAwesomeIcon icon={faUser} /> Zaloguj się</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="/register">
                                 <a><FontAwesomeIcon icon={faUserPlus} /> Zarejestruj się</a>
                             </Link>
                         </li>
