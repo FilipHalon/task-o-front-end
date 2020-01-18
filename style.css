@@ -230,3 +230,13 @@ form button:last-of-type {
     color: #8F9DBE;
     text-align: end;
 }
+
+/* tasks */
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    position: absolute;
+}
