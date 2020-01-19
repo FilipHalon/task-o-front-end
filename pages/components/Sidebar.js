@@ -5,15 +5,17 @@ import RecentTask from './RecentTask';
 const Sidebar = () => {
     return (
         <section className="sidebar">
-            <div>
+            <div className="search-area">
                 <FontAwesomeIcon icon={faSearch} />
                 <input type="text" placeholder="Wyszukaj"/>
             </div>
-            <div>
-                Ostatnie zadania
+            <div className="recent-task-list">
+                <div>Ostatnie zadania</div>
+                <ul>
+                    <li><RecentTask /></li>
+                    <li><RecentTask /></li>
+                </ul>
             </div>
-            <RecentTask />
-            <RecentTask />
         </section>
     )
 }
