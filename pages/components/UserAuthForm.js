@@ -4,6 +4,7 @@ import { faUser, faBuilding, faLock } from '@fortawesome/free-solid-svg-icons';
 
 
 const UserAuthForm = props => {
+    const isEnterCodeStage = props.authStage === "enterCode";
     const isRegisterForm = props.formType === "register";
     const isDeveloperAccount = props.accountType === "developer";
     const isDeveloperIcon = <span>{isDeveloperAccount ? <FontAwesomeIcon icon={faUser} /> : <FontAwesomeIcon icon={faBuilding} /> }</span>
@@ -11,40 +12,55 @@ const UserAuthForm = props => {
 
     return (
         <div className="page-content-center">
-            <h1>Rejestracja konta {isDeveloperAccount ? 'programisty' : 'firmy'} do systemu Task-O!</h1>
+            {isRegisterForm ? 
+            <h1>Rejestracja konta {isDeveloperAccount ? 'programisty' : 'firmy'} do systemu Task-O!</h1> : 
+            <h1>Logowanie do systemu Task-O!</h1>}
             <form>
-                <ul>
-                    {
-                    isRegisterForm && 
-                    <li>
-                        {isDeveloperIcon}
-                        <input type="text" placeholder={isDeveloperAccount ? "Podaj imię" : "Podaj nazwę firmy"} />
-                    </li>
+                {isEnterCodeStage &&
+                    <ul>
+                        <li>
+                            <span><FontAwesomeIcon icon={faLock} /></span>
+                            <input type="text" placeholder="Wprowadź kod autoryzacyjny" />
+                        </li>
+                    </ul>
+                }
+                {!isEnterCodeStage && 
+                    <ul>
+                        {
+                        isRegisterForm && 
+                        <li>
+                            {isDeveloperIcon}
+                            <input type="text" placeholder={isDeveloperAccount ? "Podaj imię" : "Podaj nazwę firmy"} />
+                        </li>
+                        }
+                        {
+                        isRegisterForm &&
+                        <li>
+                            {isDeveloperIcon}
+                            <input type="text" placeholder={isDeveloperAccount ? "Podaj nazwisko" : "Podaj numer NIP"}/>
+                        </li>
+                        }
+                        <li>
+                            {isDeveloperIcon}
+                            <input type="email" placeholder="Podaj adres e-mail" />
+                        </li>
+                        <li>
+                            {lockIcon}
+                            <input type="password" placeholder="Podaj hasło" />
+                        </li>
+                        {
+                        isRegisterForm &&
+                        <li>
+                            {lockIcon}
+                            <input type="password" placeholder="Powtórz hasło" />
+                        </li>
+                        }
+                    </ul>
                     }
-                    {
-                    isRegisterForm &&
-                    <li>
-                        {isDeveloperIcon}
-                        <input type="text" placeholder={isDeveloperAccount ? "Podaj nazwisko" : "Podaj numer NIP"}/>
-                    </li>
-                    }
-                    <li>
-                        {isDeveloperIcon}
-                        <input type="email" placeholder="Podaj adres e-mail" />
-                    </li>
-                    <li>
-                        {lockIcon}
-                        <input type="password" placeholder="Podaj hasło" />
-                    </li>
-                    {
-                    isRegisterForm &&
-                    <li>
-                        {lockIcon}
-                        <input type="password" placeholder="Powtórz hasło" />
-                    </li>
-                    }
-                </ul>
-                <button className={isRegisterForm ? "register-button" : "login-button"}>Zarejestruj się</button>
+                {isEnterCodeStage ?
+                <button className="enter-code-stage-button">Zatwierdź</button> : 
+                <button className={isRegisterForm ? "register-button" : "login-button"}>{isRegisterForm ? "Zarejestruj się" : "Zaloguj się"}</button>
+                }
                 <Link href={isRegisterForm ? "/login" : "/register"}>
                     <button>{isRegisterForm ? "Zaloguj się" : "Zarejestruj się"}</button>
                 </Link>

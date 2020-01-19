@@ -224,11 +224,23 @@ form button:first-of-type {
     background-color: #39C379;
 }
 
+.enter-code-stage-button {
+    background-color: #9536d9;
+}
+
+.enter-code-stage-button:hover {
+    background-color: #712aa3;
+}
+
 form button:last-of-type {
     margin-top: 5%;
     background-color: #FFF;
     color: #8F9DBE;
     text-align: end;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /* tasks */
