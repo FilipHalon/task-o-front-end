@@ -243,6 +243,13 @@ button:hover {
     cursor: pointer;
 }
 
+/* success message */
+
+.success-message-content {
+    max-width: 1000px;
+    font-size: 1.4em;
+}
+
 /* tasks */
 
 main {
