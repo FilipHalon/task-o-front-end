@@ -33,7 +33,7 @@ const TaskDescription = () => {
                             <span>Limit pamięci</span>
                             <span>1024 MB</span>
                         </div> */}
-                        <span>Dowolny język programowania</span>
+                        <span className="required-programming-languages">Dowolny język programowania</span>
                     </div>
                     <div className="task-description-summary">
                         Twoim zadaniem będzie posortowanie ciągu liczb całkowitych. Jednakże nie podajemy ograniczenia na liczbę elementów tego ciągu. Napisz program, który będzie wczytywał liczby ze standardowego wejścia, tak długo, aż wczytaną liczbą będzie 0 oraz wypisze wszystkie wczytane liczby w porządku niemalejącym.

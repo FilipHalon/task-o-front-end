@@ -326,7 +326,7 @@ div.task-description {
     border-bottom: var(--sidebar-border);
 }
 
-.programming-languages span {
+.required-programming-languages {
     padding: 1%;
     border-radius: 10px;
     background: #D7D0F0;
@@ -452,4 +452,65 @@ div.task-description {
 .recent-task > span:last-of-type {
     align-self: center;
     color: #838EAB;
+}
+
+/* active task */
+
+.active-task {
+    border-radius: 4px;
+    background: #FFF;
+    font-size: 90%;
+}
+
+.active-task .recent-task {
+    border-bottom: var(--sidebar-border);
+    padding: .5rem;
+}
+
+.active-task .recent-task svg {
+    color: #FE716C;
+}
+
+.active-task img {
+    width: 2em;
+}
+
+.active-task-summary {
+    background: #F6F9FC;
+}
+
+.active-task-summary span {
+    display: inline-block;
+    margin: 1em;
+    padding: .5em;
+    background: #FFF;
+    border-radius: 4px;
+}
+
+.active-task > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.active-task > div:last-of-type span {
+    padding: .5rem;
+}
+
+.active-task > div:last-of-type span:first-of-type {
+    color: #838EAB;
+}
+
+.active-task > div:last-of-type span:last-of-type {
+    border-radius: 4px;
+    color: #FFF;
+    background: #4457F3;
+}
+
+/* active tasks */
+
+.task-area {
+    display: grid;
+    grid: auto / 1fr 1fr;
+    grid-gap: 2em;
 }
