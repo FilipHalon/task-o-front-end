@@ -7,7 +7,7 @@ const LoginArea = props => {
     return (
         <Link href="/register" accountType={props.accountType} >
             <span className={isDeveloperAccount ? "login-area developer-account" : "login-area company-account"}>
-                <span>Utwórz kontro {isDeveloperAccount ? 'programisty' : 'firmy'}</span>
+                <span>Utwórz konto {isDeveloperAccount ? 'programisty' : 'firmy'}</span>
                 <span className="account-icon">{isDeveloperAccount ? <FontAwesomeIcon icon={faUserCheck} /> : <FontAwesomeIcon icon={faBuilding} />}</span>
             </span>
         </Link>
