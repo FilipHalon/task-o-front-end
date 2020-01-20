@@ -16,13 +16,13 @@ const NewTaskAdd = props => {
                     <form className="solution-add-area">
                         {isNewSolution ?
                         <div className="input-area">
-                            <input type="file" placeholder="Załaduj rozwiązanie"/>
+                            <input type="file"/>
                         </div>
                         :
                         <div className="input-area">
-                            <input type="text" placeholder="Podaj streszczenie zadania"/>
+                            <textarea type="text" rows="4" cols="90" placeholder="Podaj streszczenie zadania"/>
                             <input type="text" placeholder="Wybierz język programowania"/>
-                            <input type="text" placeholder="Podaj szczegóły zadania"/>
+                            <textarea type="text" rows="8" cols="90" placeholder="Podaj szczegóły zadania"/>
                         </div>
                         }
                         <div>

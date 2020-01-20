@@ -15,7 +15,7 @@ const UserAuthForm = props => {
             {isRegisterForm ? 
             <h1>Rejestracja konta {isDeveloperAccount ? 'programisty' : 'firmy'} do systemu Task-O!</h1> : 
             <h1>Logowanie do systemu Task-O!</h1>}
-            <form>
+            <form className="auth-form">
                 {isEnterCodeStage &&
                     <ul>
                         <li>
