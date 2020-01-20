@@ -58,8 +58,8 @@ const UserAuthForm = props => {
                     </ul>
                     }
                 {isEnterCodeStage ?
-                <button className="enter-code-stage-button">Zatwierdź</button> : 
-                <button className={isRegisterForm ? "register-button" : "login-button"}>{isRegisterForm ? "Zarejestruj się" : "Zaloguj się"}</button>
+                <button type="submit" className="enter-code-stage-button">Zatwierdź</button> : 
+                <button type="submit" className={isRegisterForm ? "register-button" : "login-button"}>{isRegisterForm ? "Zarejestruj się" : "Zaloguj się"}</button>
                 }
                 <Link href={isRegisterForm ? "/login" : "/register"}>
                     <button>{isRegisterForm ? "Zaloguj się" : "Zarejestruj się"}</button>
