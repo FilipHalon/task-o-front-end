@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCommentAlt, faThumbsUp, faCloudUploadAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
@@ -41,8 +42,12 @@ const TaskDescription = () => {
                     <div className="actions">
                         <span>Możliwe akcje</span>
                         <span>
-                            <FontAwesomeIcon icon={faCloudUploadAlt} />
-                            <FontAwesomeIcon icon={faPaperPlane} />
+                            <Link href="/new-solution-add">
+                                <FontAwesomeIcon icon={faCloudUploadAlt} />
+                            </Link>
+                            <Link href="/new-solution-add">
+                                <FontAwesomeIcon icon={faPaperPlane} />
+                            </Link>
                         </span>
                     </div>
                     <div className="task-description-details">

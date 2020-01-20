@@ -14,7 +14,7 @@ const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="/tasks">
                                 <a><FontAwesomeIcon icon={faTasks} /> Zadania</a>
                             </Link>
                         </li>

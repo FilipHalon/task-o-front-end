@@ -1,6 +1,14 @@
 :root {
     --navbar-text-color: #B5BDFB;
     --sidebar-border: 1px solid #E6EBF1;
+    --button-green: #39C3797E;
+    --button-green-hover: #39C379;
+    --button-purple: #ad14c4;
+    --button-purple-hover: #712aa3;
+    --button-orange: #EB9771 ;
+    --button-orange-hover: #FF7325;
+    --button-blue: #4457F3;
+    --button-blue-hover: #5D6CED;
 }
 
 * {
@@ -129,14 +137,23 @@ h1 {
     max-width: 300px;
     color: #FFF;
     border-radius: 2%;
+    cursor: pointer;
 }
 
 .developer-account {
-    background-color: #4457F3;
+    background-color: var(--button-blue-hover);
+}
+
+.developer-account:hover {
+    background-color: var(--button-blue);
 }
 
 .company-account {
-    background-color: #FF733F;
+    background-color: var(--button-orange);
+}
+
+.company-account:hover {
+    background-color: var(--button-orange-hover);
 }
 
 .login-area span {
@@ -218,19 +235,19 @@ form button:first-of-type {
 }
 
 .login-button {
-    background-color: #39C3797E;
+    background-color: var(--button-green);
 }
 
 .login-button:hover {
-    background-color: #39C379;
+    background-color: var(--button-green-hover);
 }
 
 .enter-code-stage-button {
-    background-color: #9536d9;
+    background-color: var(--button-purple);
 }
 
 .enter-code-stage-button:hover {
-    background-color: #712aa3;
+    background-color: var(--button-purple-hover);
 }
 
 form button:last-of-type {
@@ -368,13 +385,18 @@ div.task-description {
 }
 
 .actions span:first-of-type {
-    background: #465DEF;
+    background: var(--button-blue);
     color: #FFF;
 }
 
 .actions svg {
     padding: 15px;
     color: #838DAC;
+    cursor: pointer;
+}
+
+.actions svg:hover {
+    color: var(--button-purple-hover);
 }
 
 .task-description h2 {
@@ -452,11 +474,21 @@ div.task-description {
 .recent-task-description {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+}
+
+.recent-task-description:hover {
+    color: var(--button-purple-hover);
 }
 
 .recent-task > span:last-of-type {
     align-self: center;
     color: #838EAB;
+    cursor: pointer;
+}
+
+.recent-task > span:last-of-type:hover {
+    color: var(--button-purple-hover);
 }
 
 /* active task */
@@ -509,7 +541,7 @@ div.task-description {
 .active-task > div:last-of-type span:last-of-type {
     border-radius: 4px;
     color: #FFF;
-    background: #4457F3;
+    background: var(--button-blue);
 }
 
 /* active tasks */
@@ -522,18 +554,18 @@ div.task-description {
 
 /* solution add */
 
-main.solution-add .task-description {
-    /* width: 90%; */
-    /* height: 100%; */
+/* main.solution-add .task-description {
+    width: 90%;
+    height: 100%;
 }
 
 div.solution-add-area {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* width: 100%; */
-    /* height: 400px; */
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+} */
 
 .solution-add-message {
     margin: 2rem 4rem;
@@ -541,7 +573,7 @@ div.solution-add-area {
 
 .solution-add-message-top {
     display: flex;
-    background: #4457F3;
+    background: var(--button-blue);
     color: #FFF;
 }
 
@@ -576,7 +608,7 @@ div.solution-add-area {
     padding: .6rem;
     margin: 1.5rem;
     border-radius: 4px;
-    background: #4457F3;
+    background: var(--button-blue);
     color: #FFF;
     text-align: center;
 }
@@ -617,6 +649,10 @@ form.solution-add-area > div:last-of-type {
 
 form.solution-add-area > div:last-of-type button {
     margin: 1rem;
-    background: #39C379;
+    background: var(--button-green);
     color: #FFF;
+}
+
+form.solution-add-area > div:last-of-type button:hover {
+    background-color: var(--button-green-hover);
 }
