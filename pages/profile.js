@@ -5,7 +5,7 @@ const ProfilePage = () => {
     return (
         <main>
             <Sidebar/>
-            <Profile/>
+            <Profile accountType=""/>
         </main>
     )
 };

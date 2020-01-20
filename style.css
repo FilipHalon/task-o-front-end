@@ -30,6 +30,10 @@ body {
     height: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 /* navbar */
 
 header {
@@ -72,6 +76,11 @@ nav a {
     font-size: 80%;
 }
 
+nav a:hover {
+    background-color: #5D6CED;
+    color: #FFF;
+}
+
 @media (min-width: 400px) {
     nav a {
         font-size: 90%;
@@ -84,11 +93,6 @@ nav img {
 
 .navbar-auth li:first-of-type a {
     border: solid 1px rgba(255, 255, 255, .1);
-}
-
-.navbar-auth li:last-of-type a:last-of-type {
-    background-color: #5D6CED;
-    color: #FFF;
 }
 
 /* footer */
@@ -541,7 +545,12 @@ div.task-description {
 .active-task > div:last-of-type span:last-of-type {
     border-radius: 4px;
     color: #FFF;
+    background: var(--button-blue-hover);
+}
+
+.active-task > div:last-of-type span:last-of-type:hover {
     background: var(--button-blue);
+    cursor: pointer;
 }
 
 /* active tasks */
@@ -601,6 +610,12 @@ div.solution-add-area {
     border-radius: 4px;
     background: #212844;
     color: #838DAC;
+    transition: .4s;
+}
+
+.solution-add-message-bottom button:hover {
+    background: #838DAC;
+    color: #212844;
 }
 
 .solution-add-status {

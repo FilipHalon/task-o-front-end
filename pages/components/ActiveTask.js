@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
@@ -32,7 +33,9 @@ const ActiveTask = props => {
             }
             <div>
                 <span>1 godzinę temu</span>
-                <span>Zobacz <FontAwesomeIcon icon={faTasks} /> </span>
+                <Link href="/tasks">
+                    <span className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </span>
+                </Link>
             </div>
         </div>
     )
