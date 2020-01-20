@@ -1,9 +1,12 @@
 import ActiveTask from "./ActiveTask"
 
-const ActiveTasks = () => {
+const ActiveTasks = props => {
+    const isOwnTask = props.ownTasks === "ownTasks"; 
+
     return (
         <section className="task-description">
             <div className="task-description">
+                {!isOwnTask &&
                 <div className="task-general-info">
                     <div>
                         <h2>Zadania</h2>
@@ -11,10 +14,11 @@ const ActiveTasks = () => {
                         {/* <p>Firmy: 100</p> */}
                     </div>
                 </div>
+                }
                 <div className="task-area">
-                    <ActiveTask />
-                    <ActiveTask />
-                    <ActiveTask />
+                    <ActiveTask ownTask={isOwnTask && "ownTask"}/>
+                    <ActiveTask ownTask={isOwnTask && "ownTask"}/>
+                    <ActiveTask ownTask={isOwnTask && "ownTask"}/>
                 </div>
             </div>
         </section>

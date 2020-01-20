@@ -1,7 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTasks } from '@fortawesome/free-solid-svg-icons';
+import { faTasks, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-const ActiveTask = () => {
+const ActiveTask = props => {
+    const isOwnTask = props.ownTask === "ownTask"; 
+
     return (
         <div className="active-task">
             <div className="recent-task">
@@ -13,10 +15,21 @@ const ActiveTask = () => {
                 <span><image src="/UAM-logo-siw-amu.jpg" alt="" /></span>
             </div>
             <div className="active-task-summary">
+                {isOwnTask ?
+                <span>
+                    Autor rozwiązania: Jan Kowalski
+                </span>
+                :
                 <span>
                     Twoim zadaniem będzie posortowanie ciągu liczb całkowitych. Jednakże nie podajemy ograniczenia na liczbę elementów tego ciągu. Napisz program, który będzie fajny. 
                 </span>
+                }
             </div>
+            {isOwnTask &&
+            <div className="solution-add-message-bottom">
+                <button><FontAwesomeIcon icon={faPaperPlane} /> Wyślij wiadomość</button>
+            </div>
+            }
             <div>
                 <span>1 godzinę temu</span>
                 <span>Zobacz <FontAwesomeIcon icon={faTasks} /> </span>

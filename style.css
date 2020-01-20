@@ -261,6 +261,10 @@ main {
 
 }
 
+section.task-description{
+    width: 100%;
+}
+
 div.task-description {
     /* position: absolute;
     left: 350px; */
