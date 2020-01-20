@@ -514,3 +514,63 @@ div.task-description {
     grid: auto / 1fr 1fr;
     grid-gap: 2em;
 }
+
+/* solution add */
+
+main.solution-add .task-description {
+    width: 90%;
+    height: 100%;
+}
+
+.solution-add-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.solution-add-message {
+    margin: 2rem 4rem;
+}
+
+.solution-add-message-top {
+    display: flex;
+    background: #4457F3;
+    color: #FFF;
+}
+
+.solution-add-message-top div {
+    padding: .6rem;
+}
+
+.solution-add-message-top > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+.solution-add-message-top > div:last-of-type span {
+    padding: .3rem;
+}
+
+.solution-add-message-bottom {
+    background: #212844;
+}
+
+.solution-add-message-bottom button {
+    padding: .2rem;
+    margin: .5rem 1.5rem;
+    border: 1px solid #838DAC;
+    border-radius: 4px;
+    background: #212844;
+    color: #838DAC;
+}
+
+.solution-add-status {
+    align-self: center;
+    padding: .6rem;
+    margin: 1.5rem;
+    border-radius: 4px;
+    background: #4457F3;
+    color: #FFF;
+    text-align: center;
+}

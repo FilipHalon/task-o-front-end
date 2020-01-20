@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks } from '@fortawesome/free-solid-svg-icons';
-import ActiveTasks from './ActiveTasks';
 
 const ActiveTask = () => {
     return (
