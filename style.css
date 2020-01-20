@@ -656,3 +656,33 @@ form.solution-add-area > div:last-of-type button {
 form.solution-add-area > div:last-of-type button:hover {
     background-color: var(--button-green-hover);
 }
+
+/* profile */
+
+.profile-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 4px;
+    box-shadow: 0px 7px 14px #32325D1A;
+    background: #FFF;
+    font-size: 130%;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.profile-action:hover {
+    background: #838DAC;
+    color: #FFF;
+}
+
+.profile-action span {
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+}
+
+.profile-action svg {
+    font-size: 140%;
+    color: var(--button-orange)
+}
